@@ -1,0 +1,17 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: False
+  tasks:
+    - name: Creating an EC2 key-pair
+      ec2_key:
+        name: Ansible-KP
+        region: ap-south-1
+      register: keyout ## Storing the value to this variable
+    - debug:
+        var: keyout ## Output and seeing the content of that variable
+    - name: Storing the created keypait into local
+      copy:
+        content: "{{keyout.key.private_key}}" ## Using the variable
+        dest: ./Ansible-KP.pem
+      when: keyout.changed
