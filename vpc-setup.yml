@@ -26,4 +26,4 @@
         az: "{{Zone1}}"
         resource_tags:
           name: vprofile-PubSub1
-        register: pubsub1_out
+      register: pubsub1_out
