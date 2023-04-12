@@ -1,0 +1,5 @@
+# Amazon Linux 2 AMI in Mumbai
+bastion_ami: "ami-09f7fbc41963e146f"
+
+region: "ap-south-1"
+MYIP: "117.192.80.241/32"
