@@ -43,7 +43,7 @@
         image: "{{bastion_ami}}"
         wait: yes
         wait_timeout: 300
-        resource_tags:
+        instance_tags:
           Name: "Bastion_Host"
           Project: "vprofile"
           Owner: prakash
