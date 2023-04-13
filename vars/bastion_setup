@@ -2,4 +2,4 @@
 bastion_ami: "ami-09f7fbc41963e146f"
 
 region: "ap-south-1"
-MYIP: "117.192.80.109/32"
+MYIP: "117.192.87.202/32"
